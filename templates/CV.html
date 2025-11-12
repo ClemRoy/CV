@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Clément Roy - Développeur Fullstack</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cv.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- En-tête avec photo et informations principales -->
+        <header class="header">
+            <div class="header-bg"></div>
+            <div class="header-content">
+                <div class="profile-section">
+                    <div class="profile-image">
+                        <!-- Placeholder pour photo de profil -->
+                        <div class="photo-placeholder">
+                            <span>CR</span>
+                        </div>
+                    </div>
+                    <div class="profile-info">
+                        <h1 class="name">Clément <span class="last-name">Roy</span></h1>
+                        <h2 class="job-title">Développeur Fullstack</h2>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="icon">📱</i>
+                                <span>06.76.91.29.88</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="icon">✉️</i>
+                                <span>clemroy.dev@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="icon">📍</i>
+                                <span>Herblay-sur-Seine, Val d'Oise</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="icon">🚗</i>
+                                <span>Mobile en Île-de-France - Non véhiculé</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <!-- Colonne de gauche -->
+            <div class="left-column">
+                <!-- Section Profil -->
+                <section class="card profile-card">
+                    <h2 class="section-title">Profil personnel</h2>
+                    <p>À la recherche d'une alternance en tant que développeur FullStack pour une durée de 18 mois avec un rythme de trois semaines en entreprise et une semaine en formation avec Datascientest.</p>
+                    <p>Passionné et motivé, prêt à relever tous les défis du développement d'applications avec créativité et détermination.</p>
+                </section>
+
+                <!-- Section Expérience professionnelle pour mobile/tablette -->
+                <section class="card mobile-experience">
+                    <h2 class="section-title">Expérience professionnelle</h2>
+                    <h3 class="portfolio-title">Portfolio de mes réalisations</h3>
+                    
+                    <!-- Carrousel mobile -->
+                    <div class="mobile-experience-carousel">
+                        <div class="mobile-carousel-container">
+                            <div class="mobile-carousel-track">
+                                <!-- Slide 1 - Glorious Escape -->
+                                <div class="mobile-carousel-slide active">
+                                    <div class="mobile-project">
+                                        <h4 class="project-title">
+                                            Site web Escape Game 
+                                            <a href="https://gloriousescape-stbrice.fr/" class="project-link">Glorious Escape St-Brice</a>
+                                        </h4>
+                                        <div class="project-missions">
+                                            <div class="mission-item">
+                                                <span class="mission-name">Analyse & audit</span>
+                                                <div class="mission-details">
+                                                    Étude du site existant pour identifier les points à améliorer en termes d'expérience utilisateur, d'ergonomie et de SEO.
+                                                </div>
+                                            </div>
+                                            <div class="mission-item">
+                                                <span class="mission-name">Création d'un clone</span>
+                                                <div class="mission-details">
+                                                    Réalisation d'un site temporaire pour tester les modifications sans impacter le site en production.
+                                                </div>
+                                            </div>
+                                            <div class="mission-item">
+                                                <span class="mission-name">Modifications front-end</span>
+                                                <div class="mission-details">
+                                                    Adaptation du design, mise en page, ajustement des styles et amélioration de l'interface utilisateur.
+                                                </div>
+                                            </div>
+                                            <div class="mission-item">
+                                                <span class="mission-name">Intégration réseaux sociaux</span>
+                                                <div class="mission-details">
+                                                    Ajout des boutons et flux sociaux, liaison avec les comptes officiels.
+                                                </div>
+                                            </div>
+                                            <div class="mission-item">
+                                                <span class="mission-name">Gestion SEO</span>
+                                                <div class="mission-details">
+                                                    Optimisation des pages pour le référencement naturel, ajout de méta-tags, titres, descriptions.
+                                                </div>
+                                            </div>
+                                            <div class="mission-item">
+                                                <span class="mission-name">Configuration email pro</span>
+                                                <div class="mission-details">
+                                                    Mise en place d'une adresse professionnelle et paramétrage des outils associés.
+                                                </div>
+                                            </div>
+                                            <div class="mission-item">
+                                                <span class="mission-name">Déploiement sur OVH</span>
+                                                <div class="mission-details">
+                                                    Mise en ligne du site sur l'hébergement OVH, configuration du domaine, sécurité.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Slide 2 - ADIAE -->
+                                <div class="mobile-carousel-slide">
+                                    <div class="mobile-project">
+                                        <h4 class="project-title">
+                                            Site web Association ADIAE : 
+                                            <a href="https://messavoirs.fr/" class="project-link">Messavoirs</a>
+                                        </h4>
+                                        <div class="project-missions">
+                                            <div class="mission-item">
+                                                <span class="mission-name">Analyse des besoins</span>
+                                                <div class="mission-details">
+                                                    Identification des attentes du client et définition des objectifs fonctionnels et techniques.
+                                                </div>
+                                            </div>
+                                            <div class="mission-item">
+                                                <span class="mission-name">Audit et restructuration</span>
+                                                <div class="mission-details">
+                                                    Étude des pages existantes, amélioration de l'ergonomie et proposition de nouvelles structures.
+                                                </div>
+                                            </div>
+                                            <div class="mission-item">
+                                                <span class="mission-name">Conception de l'architecture</span>
+                                                <div class="mission-details">
+                                                    Organisation des types de contenu, taxonomies et navigation pour une UX optimale.
+                                                </div>
+                                            </div>
+                                            <div class="mission-item">
+                                                <span class="mission-name">Développement Front & Back</span>
+                                                <div class="mission-details">
+                                                    Mise en place des pages, intégration des thèmes et création des fonctionnalités côté serveur.
+                                                </div>
+                                            </div>
+                                            <div class="mission-item">
+                                                <span class="mission-name">Fonctionnalités personnalisées</span>
+                                                <div class="mission-details">
+                                                    Création de types de contenu personnalisés, champs ACF, carrousels et gestion des droits.
+                                                </div>
+                                            </div>
+                                            <div class="mission-item">
+                                                <span class="mission-name">Tests fonctionnels</span>
+                                                <div class="mission-details">
+                                                    Vérification du bon fonctionnement, compatibilité navigateurs et expérience utilisateur.
+                                                </div>
+                                            </div>
+                                            <div class="mission-item">
+                                                <span class="mission-name">Déploiement sur O2switch</span>
+                                                <div class="mission-details">
+                                                    Mise en ligne du site, configuration du serveur et vérification performance/sécurité.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Contrôles du carrousel mobile -->
+                            <div class="mobile-carousel-controls">
+                                <button class="mobile-carousel-btn mobile-prev-btn" aria-label="Projet précédent">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 18l-6-6 6-6"/>
+                                    </svg>
+                                </button>
+                                <div class="mobile-carousel-indicators">
+                                    <button class="mobile-indicator active" aria-label="Afficher le projet Glorious Escape"></button>
+                                    <button class="mobile-indicator" aria-label="Afficher le projet ADIAE"></button>
+                                </div>
+                                <button class="mobile-carousel-btn mobile-next-btn" aria-label="Projet suivant">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 18l6-6-6-6"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section Autres expériences pour mobile -->
+                    <div class="other-experiences-collapsible">
+                        <div class="collapsible-header">
+                            <h3 class="collapsible-title">Autres expériences professionnelles</h3>
+                            <span class="collapsible-indicator">+</span>
+                        </div>
+                        <div class="collapsible-content">
+                            <div class="other-job-item">
+                                <h4 class="other-job-title">Réceptionniste polyvalent en hôtellerie</h4>
+                                <p class="other-job-period">Ibis Hôtel – Cergy, Paris-Montparnasse, Mairie de Clichy (Septembre 2018 - Décembre 2019)</p>
+                                <div class="other-job-description">
+                                    Accueil et gestion de la clientèle, coordination des équipes, suivi des stocks et gestion du standard téléphonique.
+                                </div>
+                            </div>
+                            
+                            <div class="other-job-item">
+                                <h4 class="other-job-title">Maître de jeu en Escape Game</h4>
+                                <p class="other-job-period">Neurones Escape Game – Éragny (Missions en 2020)</p>
+                                <div class="other-job-description">
+                                    Encadrement des sessions, accompagnement des joueurs et entretien du matériel entre chaque partie.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section Compétences -->
+                <section class="card">
+                    <h2 class="section-title">Compétences</h2>
+                    
+                    <div class="skill-category">
+                        <h3 class="skill-title">Hard Skills</h3>
+                        
+                        <div class="skill-group">
+                            <h4>Langages de programmation</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">HTML/CSS</span>
+                                <span class="skill-tag">SQL</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-group">
+                            <h4>Frameworks</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Django</span>
+                                <span class="skill-tag">Flask</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-group">
+                            <h4>Outils</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">Postman</span>
+                                <span class="skill-tag">VS Code</span>
+                                <span class="skill-tag">Selenium</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="skill-title">Soft Skills</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag soft">Autonome</span>
+                            <span class="skill-tag soft">Organisé</span>
+                            <span class="skill-tag soft">Recherches académiques</span>
+                            <span class="skill-tag soft">Travail d'équipe</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section Langues -->
+                <section class="card">
+                    <h2 class="section-title">Langues</h2>
+                    <div class="languages-container">
+                        <div class="language-item">
+                            <div class="language-info">
+                                <span class="language-name">Français</span>
+                                <span class="language-level-text">Langue maternelle</span>
+                            </div>
+                            <div class="language-level">
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                            </div>
+                        </div>
+                        <div class="language-item">
+                            <div class="language-info">
+                                <span class="language-name">Anglais</span>
+                                <span class="language-level-text">TOEIC 935/990</span>
+                            </div>
+                            <div class="language-level">
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot"></span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section Centres d'intérêt -->
+                <section class="card">
+                    <h2 class="section-title">Centres d'intérêt</h2>
+                    <div class="hobbies-list">
+                        <div class="hobby-item">
+                            <div class="hobby-header">
+                                <div class="hobby-icon">📚</div>
+                                <span class="hobby-name">Histoire</span>
+                            </div>
+                            <div class="hobby-details">
+                                Passion pour l'histoire antique (Rome, Parthes), le XVIIᵉ-XVIIIᵉ siècle et l'époque napoléonienne.
+                            </div>
+                        </div>
+                        <div class="hobby-item">
+                            <div class="hobby-header">
+                                <div class="hobby-icon">🎨</div>
+                                <span class="hobby-name">Culture classique</span>
+                            </div>
+                            <div class="hobby-details">
+                                Goût prononcé pour les références culturelles, artistiques et littéraires issues du patrimoine européen.
+                            </div>
+                        </div>
+                        <div class="hobby-item">
+                            <div class="hobby-header">
+                                <div class="hobby-icon">🌐</div>
+                                <span class="hobby-name">Culture Internet</span>
+                            </div>
+                            <div class="hobby-details">
+                                Actif depuis 2005 dans la culture des mèmes (bilingue FR/EN) et amateur de streamers tels que Antoine Daniel, Joueur du Grenier, Angledroit, Zerator et Baghera Jones.
+                            </div>
+                        </div>
+                        <div class="hobby-item">
+                            <div class="hobby-header">
+                                <div class="hobby-icon">🎮</div>
+                                <span class="hobby-name">Jeux vidéo</span>
+                            </div>
+                            <div class="hobby-details">
+                                Intérêt particulier pour les univers narratifs et stratégiques : Mass Effect, Project Zomboid, Total War, Helldivers, etc.
+                            </div>
+                        </div>
+                        <div class="hobby-item">
+                            <div class="hobby-header">
+                                <div class="hobby-icon">📺</div>
+                                <span class="hobby-name">Animés</span>
+                            </div>
+                            <div class="hobby-details">
+                                Passion pour les œuvres fortes en narration et en esthétique : One Piece, Sousou no Frieren, Samouraï Champloo, Attack on Titan.
+                            </div>
+                        </div>
+                        <div class="hobby-item">
+                            <div class="hobby-header">
+                                <div class="hobby-icon">🎲</div>
+                                <span class="hobby-name">Jeux de rôles</span>
+                            </div>
+                            <div class="hobby-details">
+                                Maître du jeu sur Warhammer 40,000 Rogue Trader ; expérience sur Pathfinder et Z-Corps.
+                            </div>
+                        </div>
+                        <div class="hobby-item">
+                            <div class="hobby-header">
+                                <div class="hobby-icon">🎵</div>
+                                <span class="hobby-name">Musique</span>
+                            </div>
+                            <div class="hobby-details">
+                                <strong>Électronique :</strong> Nujabes, I Hate Models, Ava Mind, Massive Attack, Ratatat, Daft Punk, Kavinsky, The Prodigy.<br>
+                                <strong>Rock & Metal :</strong> Kansas, Deep Purple, The Doors, Rolling Stones, Sabaton, Aerosmith, Led Zeppelin.<br>
+                                <strong>Rap :</strong> Eminem, Sadek, Stupeflip, Demi Portion, Davodka.<br>
+                                <strong>Classique :</strong> Debussy, Tchaïkovsky, Lorien Testard, Wagner.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Colonne de droite -->
+            <div class="right-column">
+                <!-- Section Expérience professionnelle avec carrousel -->
+                <section class="card desktop-experience">
+                    <h2 class="section-title">Expérience professionnelle</h2>
+                    <h3 class="portfolio-title">Portfolio de mes réalisations</h3>
+                    
+                    <div class="experience-carousel">
+                        <div class="carousel-container">
+                            <div class="carousel-track">
+                                <!-- Slide 1 - Glorious Escape -->
+                                <div class="carousel-slide active">
+                                    <div class="experience-item">
+                                        <div class="project">
+                                            <h4 class="project-title">
+                                                Site web Escape Game 
+                                                <a href="https://gloriousescape-stbrice.fr/" class="project-link">Glorious Escape St-Brice</a>
+                                            </h4>
+                                            <div class="project-missions">
+                                                <div class="mission-item">
+                                                    <span class="mission-name">Analyse & audit</span>
+                                                    <div class="mission-details">
+                                                        Étude du site existant pour identifier les points à améliorer en termes d'expérience utilisateur, d'ergonomie et de SEO.
+                                                    </div>
+                                                </div>
+                                                <div class="mission-item">
+                                                    <span class="mission-name">Création d'un clone</span>
+                                                    <div class="mission-details">
+                                                        Réalisation d'un site temporaire pour tester les modifications sans impacter le site en production.
+                                                    </div>
+                                                </div>
+                                                <div class="mission-item">
+                                                    <span class="mission-name">Modifications front-end</span>
+                                                    <div class="mission-details">
+                                                        Adaptation du design, mise en page, ajustement des styles et amélioration de l'interface utilisateur.
+                                                    </div>
+                                                </div>
+                                                <div class="mission-item">
+                                                    <span class="mission-name">Intégration réseaux sociaux</span>
+                                                    <div class="mission-details">
+                                                        Ajout des boutons et flux sociaux, liaison avec les comptes officiels.
+                                                    </div>
+                                                </div>
+                                                <div class="mission-item">
+                                                    <span class="mission-name">Gestion SEO</span>
+                                                    <div class="mission-details">
+                                                        Optimisation des pages pour le référencement naturel, ajout de méta-tags, titres, descriptions.
+                                                    </div>
+                                                </div>
+                                                <div class="mission-item">
+                                                    <span class="mission-name">Configuration email pro</span>
+                                                    <div class="mission-details">
+                                                        Mise en place d'une adresse professionnelle et paramétrage des outils associés.
+                                                    </div>
+                                                </div>
+                                                <div class="mission-item">
+                                                    <span class="mission-name">Déploiement sur OVH</span>
+                                                    <div class="mission-details">
+                                                        Mise en ligne du site sur l'hébergement OVH, configuration du domaine, sécurité.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Slide 2 - ADIAE -->
+                                <div class="carousel-slide">
+                                    <div class="experience-item">
+                                        <div class="project">
+                                            <h4 class="project-title">
+                                                Site web Association ADIAE : 
+                                                <a href="https://messavoirs.fr/" class="project-link">Messavoirs</a>
+                                            </h4>
+                                            <div class="project-missions">
+                                                <div class="mission-item">
+                                                    <span class="mission-name">Analyse des besoins</span>
+                                                    <div class="mission-details">
+                                                        Identification des attentes du client et définition des objectifs fonctionnels et techniques.
+                                                    </div>
+                                                </div>
+                                                <div class="mission-item">
+                                                    <span class="mission-name">Audit et restructuration</span>
+                                                    <div class="mission-details">
+                                                        Étude des pages existantes, amélioration de l'ergonomie et proposition de nouvelles structures.
+                                                    </div>
+                                                </div>
+                                                <div class="mission-item">
+                                                    <span class="mission-name">Conception de l'architecture</span>
+                                                    <div class="mission-details">
+                                                        Organisation des types de contenu, taxonomies et navigation pour une UX optimale.
+                                                    </div>
+                                                </div>
+                                                <div class="mission-item">
+                                                    <span class="mission-name">Développement Front & Back</span>
+                                                    <div class="mission-details">
+                                                        Mise en place des pages, intégration des thèmes et création des fonctionnalités côté serveur.
+                                                    </div>
+                                                </div>
+                                                <div class="mission-item">
+                                                    <span class="mission-name">Fonctionnalités personnalisées</span>
+                                                    <div class="mission-details">
+                                                        Création de types de contenu personnalisés, champs ACF, carrousels et gestion des droits.
+                                                    </div>
+                                                </div>
+                                                <div class="mission-item">
+                                                    <span class="mission-name">Tests fonctionnels</span>
+                                                    <div class="mission-details">
+                                                        Vérification du bon fonctionnement, compatibilité navigateurs et expérience utilisateur.
+                                                    </div>
+                                                </div>
+                                                <div class="mission-item">
+                                                    <span class="mission-name">Déploiement sur O2switch</span>
+                                                    <div class="mission-details">
+                                                        Mise en ligne du site, configuration du serveur et vérification performance/sécurité.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Contrôles du carrousel -->
+                            <div class="carousel-controls">
+                                <button class="carousel-btn prev-btn" aria-label="Projet précédent">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 18l-6-6 6-6"/>
+                                    </svg>
+                                </button>
+                                <div class="carousel-indicators">
+                                    <button class="indicator active" aria-label="Afficher le projet Glorious Escape"></button>
+                                    <button class="indicator" aria-label="Afficher le projet ADIAE"></button>
+                                </div>
+                                <button class="carousel-btn next-btn" aria-label="Projet suivant">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 18l6-6-6-6"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Section Autres expériences repliable (hors carrousel) -->
+                    <div class="other-experiences-collapsible">
+                        <div class="collapsible-header">
+                            <h3 class="collapsible-title">Autres expériences professionnelles</h3>
+                            <span class="collapsible-indicator">+</span>
+                        </div>
+                        <div class="collapsible-content">
+                            <div class="other-job-item">
+                                <h4 class="other-job-title">Réceptionniste polyvalent en hôtellerie</h4>
+                                <p class="other-job-period">Ibis Hôtel – Cergy, Paris-Montparnasse, Mairie de Clichy (Septembre 2018 - Décembre 2019)</p>
+                                <div class="other-job-description">
+                                    Accueil et gestion de la clientèle, coordination des équipes, suivi des stocks et gestion du standard téléphonique.
+                                </div>
+                            </div>
+                            
+                            <div class="other-job-item">
+                                <h4 class="other-job-title">Maître de jeu en Escape Game</h4>
+                                <p class="other-job-period">Neurones Escape Game – Éragny (Missions en 2020)</p>
+                                <div class="other-job-description">
+                                    Encadrement des sessions, accompagnement des joueurs et entretien du matériel entre chaque partie.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section Formation -->
+                <section class="card">
+                    <h2 class="section-title">Formation</h2>
+                    
+                    <div class="education-item">
+                        <h3 class="education-title">Développeur d'application Python</h3>
+                        <p class="education-institution">OpenClassrooms - Titre RNCP de niveau 6 (équivalent Bac +4)</p>
+                        <p class="education-period">Septembre 2021 - Août 2023</p>
+                        
+                        <div class="skills-acquired">
+                            <div class="skill-item">
+                                <span class="skill-name">Déploiement CI/CD</span>
+                                <div class="skill-details">
+                                    Mise en place d'un pipeline CI/CD pour automatiser les déploiements et assurer la qualité du code.
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">CRM SQL</span>
+                                <div class="skill-details">
+                                    Conception et mise en place d'un CRM avec une base de données SQL adaptée aux besoins métier.
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">API RESTful</span>
+                                <div class="skill-details">
+                                    Développement et optimisation d'une API RESTful pour l'échange de données entre applications.
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Site web HTML/CSS/JS</span>
+                                <div class="skill-details">
+                                    Création d'un site web fonctionnel en utilisant HTML, CSS et JavaScript.
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Tests</span>
+                                <div class="skill-details">
+                                    Rédaction et exécution d'une suite de tests pour valider les fonctionnalités et détecter les bugs.
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Débogage</span>
+                                <div class="skill-details">
+                                    Identification et correction des erreurs dans les applications développées.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <h3 class="education-title">Master 1 de Sociologie - spécialité recherche</h3>
+                        <p class="education-institution">Université Paris IV - La Sorbonne</p>
+                        <p class="education-period">2016 - 2018</p>
+                        <div class="education-description">
+                            Réalisation d'un mémoire sur l'organisation décentralisée d'Anonymous
+                        </div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <h3 class="education-title">Licence d'Histoire</h3>
+                        <p class="education-institution">Université Paris IV - La Sorbonne</p>
+                        <p class="education-period">2013 - 2016</p>
+                    </div>
+                    
+                    <div class="education-item">
+                        <h3 class="education-title">Baccalauréat série Economique et Sociale</h3>
+                        <p class="education-institution">Lycée Montesquieu - Herblay-sur-Seine</p>
+                        <p class="education-period">2013</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/cv.js') }}"></script>
+</body>
+</html>
