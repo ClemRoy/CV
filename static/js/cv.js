@@ -1,5 +1,34 @@
-// Script pour le carrousel d'expérience professionnelle
+// Script pour le carrousel d'expérience professionnelle et l'animation PowerShell
 document.addEventListener('DOMContentLoaded', function() {
+    // Animation PowerShell
+    const psLines = document.querySelectorAll('.ps-line');
+    const mainContent = document.getElementById('mainContent');
+    
+    // Fonction pour afficher les lignes du terminal avec délai
+    function showTerminalLines() {
+        psLines.forEach(line => {
+            const delay = parseInt(line.getAttribute('data-delay')) || 0;
+            setTimeout(() => {
+                line.style.opacity = '1';
+                line.style.transform = 'translateY(0)';
+            }, delay);
+        });
+        
+        // Afficher le contenu principal après l'animation
+        setTimeout(() => {
+            mainContent.style.display = 'block';
+            mainContent.style.opacity = '0';
+            mainContent.style.transition = 'opacity 0.5s ease';
+            
+            setTimeout(() => {
+                mainContent.style.opacity = '1';
+            }, 50);
+        }, 4000); // Animation plus courte maintenant
+    }
+    
+    // Démarrer l'animation
+    setTimeout(showTerminalLines, 500);
+    
     // Carrousel desktop
     const desktopTrack = document.querySelector('.carousel-track');
     const desktopSlides = Array.from(document.querySelectorAll('.carousel-slide'));
